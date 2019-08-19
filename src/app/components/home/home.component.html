@@ -22,11 +22,12 @@
             </div>
           </div>
 
-          <div fxLayout="row wrap" fxLayoutGap="10px"  fxLayout.xs="column"  fxLayoutAlign="center center">
+          <div fxLayout="row wrap" 
+          fxLayoutGap="10px"  
+          fxLayout.xs="column"  fxLayoutAlign="center center" >
             <div
-              (click)="openProjectDialog(project)"
-              *ngFor="let project of config.projects"
-              mat-ripple
+            (click)="openProjectDialog(project)"
+            *ngFor="let project of config.projects" 
             >
               <!-- <img [@card]="cardState"
                 [alt]="'project image of ' + project?.name"

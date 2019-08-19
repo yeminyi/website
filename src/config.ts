@@ -50,9 +50,9 @@ export const DEFAULT_CONFIG: Config = {
   projects: projects,
   about: {
     section1:
-      'This Freelancer Theme is a free material theme created by angular material extensions based on Start' +
-      ' Bootstrap.The download includes the complete source files including HTML, CSS, and JavaScript as well as ' +
-      'optional LESS stylesheets for easy customization.',
+      '4 years experience of ASP.NET, C#, MVC, Web Forms' +
+      '5+ years experience in developing web based applications' +
+      'Experience with JavaScript frameworks such as AngularJS, Angular4+,React Js',
     section2:
       'Whether you are a student looking to showcase your work, a' +
       ' professional looking to attract clients, or a graphic artist looking to share your projects, this template ' +
