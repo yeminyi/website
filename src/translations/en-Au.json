@@ -4,9 +4,12 @@
   "ABOUT": "About Me",
   "Version": "Version",
   "PORTFOLIO": "Portfolio",
+  "PROFILE": "Amy's Profile",
   "ADDRESS": "Address",
+  "ABOUT_WEBSITE": "About Webiste",
+  "ABOUT_WEBSITE_DESC": "based on open source created by",
   "CONTACT": {
-    "SELF": "Contact",
+    "SELF": "Contact Me",
     "NAME": "Name",
     "EMAIL": "Email",
     "PHONE_NUMBER": "Mobile Nummer",

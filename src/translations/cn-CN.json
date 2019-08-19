@@ -1,14 +1,17 @@
 {
   "APP_NAME": "YOUR TITLE",
   "HOME": "首页",
-  "ABOUT": "关于",
+  "ABOUT": "关于我",
   "Version": "版本",
   "PORTFOLIO": "项目展示",
+  "PROFILE": "Amy的简介",
   "ADDRESS": "地址",
+  "ABOUT_WEBSITE": "关于网站",
+  "ABOUT_WEBSITE_DESC": "基于开源项目开发",
   "CONTACT": {
-    "SELF": "联系",
+    "SELF": "联系我",
     "NAME": "姓名",
-    "EMAIL": "Email",
+    "EMAIL": "电子邮箱",
     "PHONE_NUMBER": "电话号码",
     "MESSAGE": "留言",
     "SEND": "发送"
