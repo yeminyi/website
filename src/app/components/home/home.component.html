@@ -1,0 +1,160 @@
+<div class="container">
+  <!--<button-->
+  <!--mat-raised-button-->
+  <!--angulartics2On="click"-->
+  <!--angularticsAction="Click button below quote"-->
+  <!--[angularticsCategory]="quote"-->
+  <!--&gt;-->
+
+  <mat-card *ngIf="config?.projects && config?.projects.length > 0">
+    <mat-card-content>
+      <!-- Portfolio Grid Section -->
+      <section class="portfolio" id="portfolio">
+        <div class="container" gdAuto>
+          <h2 class="text-center text-uppercase text-secondary mb-0 mat-display-2" translate>
+            PORTFOLIO
+          </h2>
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <div fxFlexAlign="center center">
+              <mat-icon fxFlexAlign="center center" class="mat-icon-star grey">
+                star
+              </mat-icon>
+            </div>
+          </div>
+
+          <div fxLayout="row wrap" fxLayoutGap="10px"  fxLayout.xs="column"  fxLayoutAlign="center center">
+            <div
+              (click)="openProjectDialog(project)"
+              *ngFor="let project of config.projects"
+              mat-ripple
+            >
+              <!-- <img [@card]="cardState"
+                [alt]="'project image of ' + project?.name"
+                [src]="project?.imageURL"
+                class="img-project img-fluid"
+              /> -->
+              <app-project-item fxFlex="0 0 200px"
+              fxFlex.xs="1 1 auto"
+              fxLayout="row"
+              [item]="project"></app-project-item>
+            </div>
+          </div>
+        </div>
+      </section>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<app-about></app-about>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <mat-card>
+      <!--<mat-card-header>-->
+      <h2 class="mat-display-2 text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxFlexAlign="center center">
+          <mat-icon fxFlexAlign="center center" class="mat-icon-star white">
+            star
+          </mat-icon>
+        </div>
+      </div>
+      <!--</mat-card-header>-->
+      <mat-card-content fxLayoutAlign="center">
+        <form class="contact-form" action="https://formspree.io/amyyeminyi@gmail.com" method="POST">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>{{ 'CONTACT.NAME' | translate }}</mat-label>
+            <input matNativeControl id="name" name="name" type="text" placeholder="Name" required="required" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>{{ 'CONTACT.EMAIL' | translate }}</mat-label>
+            <input
+              matInput
+              #characterCountInputHintExample
+              maxLength="40"
+              id="email"
+              name="_replyto"
+              type="email"
+              placeholder="Email Address"
+              required="required"
+            />
+            <mat-hint align="end" aria-live="polite">
+              {{ characterCountInputHintExample.value.length }} / 100
+            </mat-hint>
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>{{ 'CONTACT.PHONE_NUMBER' | translate }}</mat-label>
+            <input
+              id="phone-number"
+              name="phone-number"
+              type="tel"
+              matInput
+              #characterCountInputHintExample
+              maxLength="20"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>{{ 'CONTACT.MESSAGE' | translate }}</mat-label>
+            <textarea
+              id="message"
+              name="message"
+              matInput
+              #characterCountTextareaHintExample
+              maxLength="100"
+            ></textarea>
+            <mat-hint align="end" aria-live="polite">
+              {{ characterCountTextareaHintExample.value.length }} / 100
+            </mat-hint>
+          </mat-form-field>
+
+          <button class="full-width" mat-button color="accent">
+            {{ 'CONTACT.SEND' | translate }}
+            <mat-icon>send</mat-icon>
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
+      <div fxFlex="30">
+        <h2 class="text-uppercase mb-4 mat-h2">{{ 'ADDRESS' | translate }}</h2>
+        <p class="lead mb-0">
+          {{ config?.address?.street }}
+          <br />{{ config?.address?.city }}, {{ config?.address?.zip }} <br />{{ config?.address?.state }},
+          {{ config?.address?.country }}
+        </p>
+      </div>
+      <div fxFlex="30">
+        <h2 class="text-uppercase mb-4 mat-h2">Around the Web</h2>
+        <div fxLayout="row wrap" fxLayoutAlign="center">
+          <a *ngFor="let socialEntry of socialEntries" mat-fab color="accent" target="_blank" [href]="socialEntry[1]">
+            <mat-icon [svgIcon]="socialEntry[0]"></mat-icon>
+          </a>
+        </div>
+      </div>
+      <div fxFlex="30">
+        <h2 class="text-uppercase mb-4 mat-h2">About Website</h2>
+        <p class="lead mb-0">
+         open source Angular Material theme created by
+          <a mat-button color="accent" href="https://github.com/angular-material-extensions/freelancer-theme">
+            Angular Material Extensions</a>based on startboostrap theme
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright py-4 text-center text-white">
+  <div class="container">
+    <small>Copyright &copy;2019 Amy Ye Website</small>
+  </div>
+</div>

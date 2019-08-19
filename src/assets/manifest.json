@@ -1,0 +1,17 @@
+{
+  "name": "Angular Material Freelancer Theme",
+  "short_name": "Freelancer Theme",
+  "theme_color": "#18bc9c",
+  "background_color": "#37474f",
+  "display": "browser",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/images/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

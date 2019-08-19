@@ -1,0 +1,130 @@
+version: 2
+
+job_defaults: &job_defaults
+  docker:
+    - image: circleci/node:10-browsers
+      environment:
+        CHROME_BIN: '/usr/bin/google-chrome'
+  working_directory: ~/project/repo
+
+cache_key: &cache_key angular-material-extension/freelancer-theme-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+dist_key: &dist_key angular-material-extension/freelancer-theme-dist-{{ .Revision }}
+
+jobs:
+  install:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: install-dependencies
+          command: npm ci
+      - save_cache:
+          key: *cache_key
+          paths:
+            - node_modules
+
+  lint:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: lint
+          command: npm run lint
+
+  test-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: test
+          command: npm run test:ci
+
+  codecov:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: codecov
+          command: npx codecov
+
+  build-prerender-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: test
+          command: npm run build:prerender:ci
+      - save_cache:
+          key: *dist_key
+          paths:
+            - dist
+
+  release:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: release
+          command: npm run semantic-release || true
+
+  deploy-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: deploy-app
+          command: npm run deploy:demo
+
+workflows:
+  version: 2
+  build-test-release:
+    jobs:
+      - install
+      - lint:
+          requires:
+            - install
+      #      - test-app:
+      #          requires:
+      #            - install
+      #      - codecov:
+      #          requires:
+      #            - test-app
+      - release:
+          requires:
+            - lint
+          filters:
+            branches:
+              only: master
+      - build-prerender-app:
+          requires:
+            - release
+      #            - lint
+      #            - test-app
+      - deploy-app:
+          requires:
+            - build-prerender-app
+          filters:
+            branches:
+              only: master

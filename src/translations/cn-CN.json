@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "YOUR TITLE",
+  "HOME": "首页",
+  "ABOUT": "关于",
+  "Version": "版本",
+  "PORTFOLIO": "项目展示",
+  "ADDRESS": "地址",
+  "CONTACT": {
+    "SELF": "联系",
+    "NAME": "姓名",
+    "EMAIL": "Email",
+    "PHONE_NUMBER": "电话号码",
+    "MESSAGE": "留言",
+    "SEND": "发送"
+  }
+}

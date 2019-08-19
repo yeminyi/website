@@ -1,0 +1,16 @@
+{
+  "HOME": "Home",
+  "APP_NAME": "YOUR TITLE",
+  "ABOUT": "About Me",
+  "Version": "Version",
+  "PORTFOLIO": "Portfolio",
+  "ADDRESS": "Address",
+  "CONTACT": {
+    "SELF": "Contact",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "PHONE_NUMBER": "Mobile Nummer",
+    "MESSAGE": "Message",
+    "SEND": "Send"
+  }
+}
