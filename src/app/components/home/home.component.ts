@@ -20,7 +20,6 @@ export class HomeComponent {
   ) {
     if (this.config.social) {
       this.socialEntries = Object.entries(this.config.social);
-      console.log(this.socialEntries);
     }
   }
 
