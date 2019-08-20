@@ -18,12 +18,12 @@ const projects: Project[] = [
   {
     name: 'project name',
     description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/PropertAHome.png'
+    imageURL: 'assets/img/portfolio/properta.png'
   },
   {
     name: 'project name',
     description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/circus.png'
+    imageURL: 'assets/img/portfolio/eshop.jpg'
   },
   {
     name: 'project name',
