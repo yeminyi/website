@@ -12,33 +12,32 @@ const exampleProjectDescription: string =
 const projects: Project[] = [
   {
     name: 'Task Manager',
-    description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/task-manager.jpg'
+    description: 'It is a platform for task management. Including users register, login in, tasks CRUD operations, different view for tasks, and project&task tracking. ',
+    imageURL: 'assets/img/portfolio/task-manager.jpg',
+    url:'https://yeminyi.github.io/task-manager/'
   },
   {
-    name: 'project name',
-    description: exampleProjectDescription,
+    name: 'PropertA',
+    description: 'PropertA is an online property management platform that connects the agents, landlords and tenants, with more prompt communications, tracking and data protections.',
     imageURL: 'assets/img/portfolio/properta.png'
   },
   {
-    name: 'project name',
-    description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/eshop.jpg'
+    name: 'Eshop Demo',
+    description: 'It is an Eshop Demo which can search by Product Category and shows product details, the comments and the star rating.',
+    imageURL: 'assets/img/portfolio/eshop.jpg',
+    url:'https://eshopdemo2019.firebaseapp.com'
   },
   {
-    name: 'project name',
-    description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/game.png'
+    name: 'Accounting-assistant',
+    description: 'It is a small practise using ReactJS. ',
+    imageURL: 'assets/img/portfolio/game.png',
+    url:'https://yeminyi.github.io/Accounting-assistant/'
   },
   {
-    name: 'project name',
-    description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/safe.png'
-  },
-  {
-    name: 'project name',
-    description: exampleProjectDescription,
-    imageURL: 'assets/img/portfolio/submarine.png'
+    name: 'ShowMine',
+    description: 'ShowMine is a cloud-based marketing platform.I was the Key Developer both in Front End and Back End. ',
+    imageURL: 'assets/img/portfolio/game.png',
+    url:'https://www.showmine66.com/'
   }
 ];
 
