@@ -30,13 +30,13 @@ const projects: Project[] = [
   {
     name: 'Accounting-assistant',
     description: 'It is a small practise using ReactJS. ',
-    imageURL: 'assets/img/portfolio/game.png',
+    imageURL: 'assets/img/portfolio/react.jpg',
     url:'https://yeminyi.github.io/Accounting-assistant/'
   },
   {
     name: 'ShowMine',
     description: 'ShowMine is a cloud-based marketing platform.I was the Key Developer both in Front End and Back End. ',
-    imageURL: 'assets/img/portfolio/game.png',
+    imageURL: 'assets/img/portfolio/showmine.jpg',
     url:'https://www.showmine66.com/'
   }
 ];
