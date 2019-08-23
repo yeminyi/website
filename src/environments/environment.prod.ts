@@ -6,5 +6,5 @@ export const environment = {
   version: env.npm_package_version,
   defaultLanguage: 'en-AU',
   supportedLanguages: ['en-AU', 'cn-CN'],
-  serverUrl: ''
+  serverUrl: 'https://yeminyi.github.io/website/'
 };
