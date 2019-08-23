@@ -36,8 +36,10 @@ export class AppComponent implements OnInit {
     // files to use appropriate dev/prod domain:port
     // const domain = (isPlatformServer(platformId))
     // ? 'http://localhost:4000' : 'https://angular-material-extensions.github.io/freelancer-theme';
-    const domain = isPlatformServer(platformId) ? 'http://localhost:4000' : '';
-    console.log('on construct app component');
+    // const domain = isPlatformServer(platformId) ? 'http://localhost:4000' : '';
+    // console.log('on construct app component'+platformId);
+    
+    const domain = (environment.production) ? environment.serverUrl : 'http://localhost:4210';
     _iconRegistry
       .addSvgIcon('facebook', _sanitizer.bypassSecurityTrustResourceUrl(`${domain}/assets/icons/facebook.svg`))
       .addSvgIcon('twitter', _sanitizer.bypassSecurityTrustResourceUrl(`${domain}/assets/icons/twitter.svg`))
