@@ -43,7 +43,7 @@ const projects: Project[] = [
 
 export const DEFAULT_CONFIG: Config = {
   title: 'I am Amy Ye',
-  description: 'Full Stack Web Developer - Angular | ASP.net(C#) ',
+  description: 'Web Developer - Angular | ASP.net(C#) ',
   url: 'https://github.com/yeminyi',
   domain: 'github.com',
   projects: projects,
