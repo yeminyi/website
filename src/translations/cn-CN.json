@@ -1,10 +1,13 @@
 {
   "APP_NAME": "YOUR TITLE",
   "HOME": "首页",
+  "TITLE": "我是AMY",
   "ABOUT": "关于我",
   "Version": "版本",
   "PORTFOLIO": "项目展示",
   "PROFILE": "Amy的简介",
+  "BLOG": "博客",
+  "DESCRIPTION":"WEB全栈开发 - Angular | ASP.net(C#)",
   "ADDRESS": "地址",
   "ABOUT_WEBSITE": "关于网站",
   "ABOUT_WEBSITE_DESC": "基于开源项目开发",

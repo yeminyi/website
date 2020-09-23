@@ -4,7 +4,7 @@
     <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="title">{{ config.title }}</span>
+    <span class="title" translate>TITLE</span>
   </div>
   <div fxHide.lt-md>
     <a class="brand" href="#" translate>PROFILE</a>
@@ -15,6 +15,9 @@
     <button (click)="scrollToElementByID('header')" mat-button routerLink="/header" routerLinkActive="active">
       <span class="text-uppercase" translate>HOME</span>
     </button>
+    <a mat-button href="https://yeminyi.github.io/myblog/  "target="_blank">
+      <span class="text-uppercase" translate>BLOG</span>
+    </a>
     <button (click)="scrollToElementByID('portfolio')" mat-button routerLink="/home" routerLinkActive="active">
       <span class="text-uppercase" translate>PORTFOLIO</span>
     </button>
@@ -25,12 +28,12 @@
       <span class="text-uppercase" translate>CONTACT.SELF</span>
     </button>
   </div>
-  <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+  <!-- <button mat-icon-button [matMenuTriggerFor]="languageMenu">
     <mat-icon>language</mat-icon>
   </button>
   <mat-menu #languageMenu="matMenu">
     <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">{{ language }}</button>
-  </mat-menu>
+  </mat-menu> -->
 </mat-toolbar>
 
 <!-- Header -->
@@ -46,13 +49,13 @@
             src="assets/img/profile.png"
             alt=""
           />
-          <h1 class="text-uppercase mb-0 mat-display-1">{{ config.title }}</h1>
+          <h1 class="text-uppercase mb-0 mat-display-1" translate>TITLE</h1>
           <div fxLayout="column" fxLayoutAlign="center center" class="m-4">
             <div fxFlexAlign="center center">
               <mat-icon fxFlexAlign="center center" class="mat-icon-star">star</mat-icon>
             </div>
           </div>
-          <h2 class="font-weight-light mb-0 mat-h2">{{ config.description }}</h2>
+          <h2 class="font-weight-light mb-0 mat-h2" translate>DESCRIPTION</h2>
         </div>
       </header>
     </mat-card-content>
