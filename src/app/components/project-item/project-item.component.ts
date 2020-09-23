@@ -1,18 +1,17 @@
-import { Component, OnInit,HostBinding,HostListener,Input} from '@angular/core';
-import {cardAnim} from '../../anim';
+import { Component, OnInit, HostBinding, HostListener, Input } from '@angular/core';
+import { cardAnim } from '../../anim';
 import { Project } from '../../../config.interface';
 @Component({
   selector: 'app-project-item',
   templateUrl: './project-item.component.html',
   styleUrls: ['./project-item.component.scss'],
-  animations: [cardAnim],
+  animations: [cardAnim]
 })
 export class ProjectItemComponent {
   @Input() item: Project;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   @HostBinding('@card') cardState = 'out';
 
   @HostListener('mouseenter')

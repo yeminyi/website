@@ -11,7 +11,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
 import { AboutComponent } from '../about/about.component';
-import { ProjectItemComponent } from "../project-item/project-item.component";
+import { ProjectItemComponent } from '../project-item/project-item.component';
 
 @NgModule({
   imports: [
@@ -24,7 +24,7 @@ import { ProjectItemComponent } from "../project-item/project-item.component";
     Angulartics2Module,
     HomeRoutingModule
   ],
-  declarations: [HomeComponent, AboutComponent,ProjectItemComponent],
+  declarations: [HomeComponent, AboutComponent, ProjectItemComponent],
   providers: [QuoteService]
 })
 export class HomeModule {}
