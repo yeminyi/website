@@ -685,6 +685,8 @@ THE SOFTWARE.
 @ngx-translate/core
 MIT
 
+@angular/material/menu
+
 @angular/material/toolbar
 
 @angular/material/icon
