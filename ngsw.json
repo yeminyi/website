@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600856215153,
+  "timestamp": 1601095988749,
   "index": "https://yeminyi.github.io/website/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
         "https://yeminyi.github.io/website/index.html",
         "https://yeminyi.github.io/website/main.d402be4a94d118b43f55.js",
         "https://yeminyi.github.io/website/polyfills.0e60013d71f51b5cabf9.js",
-        "https://yeminyi.github.io/website/runtime.ec2944dd8b20ec099bf3.js",
+        "https://yeminyi.github.io/website/runtime.ad7806fcc08a2ba141ce.js",
         "https://yeminyi.github.io/website/styles.98cf5a0e8ddfe66d6f83.css"
       ],
       "patterns": []
@@ -48,8 +48,7 @@
         "https://yeminyi.github.io/website/assets/img/portfolio/task-manager.jpg",
         "https://yeminyi.github.io/website/assets/img/profile.png",
         "https://yeminyi.github.io/website/assets/manifest.json",
-        "https://yeminyi.github.io/website/assets/ngx-rocket-logo.png",
-        "https://yeminyi.github.io/website/assets/pdf/graduate_software_engineer.pdf"
+        "https://yeminyi.github.io/website/assets/ngx-rocket-logo.png"
       ],
       "patterns": []
     }
@@ -83,12 +82,11 @@
     "https://yeminyi.github.io/website/assets/img/profile.png": "d4f634807720b64a2584253ae16f6840c9fe966b",
     "https://yeminyi.github.io/website/assets/manifest.json": "76cefcb0bdbf3c54d6fc5462beb96e7f3b52d002",
     "https://yeminyi.github.io/website/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
-    "https://yeminyi.github.io/website/assets/pdf/graduate_software_engineer.pdf": "4d4bfe81acee687ecffccd0d5d42f4239c2e1db8",
     "https://yeminyi.github.io/website/favicon.ico": "5a723201b9f9f69bf2124e60e91f29257b78234d",
-    "https://yeminyi.github.io/website/index.html": "d36725fc5d815a5af35e7f7394e25517f177cf18",
+    "https://yeminyi.github.io/website/index.html": "41a7aef3e6cfd973f54d4ba06572893d11c09917",
     "https://yeminyi.github.io/website/main.d402be4a94d118b43f55.js": "d2185c6686341f30bdef44b97fd6121885125a99",
     "https://yeminyi.github.io/website/polyfills.0e60013d71f51b5cabf9.js": "6946e10a03311677a01490b8e91741668e64e17e",
-    "https://yeminyi.github.io/website/runtime.ec2944dd8b20ec099bf3.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://yeminyi.github.io/website/runtime.ad7806fcc08a2ba141ce.js": "1f961b8c2aa4f9570a40d88fb433791062defafa",
     "https://yeminyi.github.io/website/styles.98cf5a0e8ddfe66d6f83.css": "f237452e72d8def9f668d6ebaa78097d8eac9b94"
   },
   "navigationUrls": [
